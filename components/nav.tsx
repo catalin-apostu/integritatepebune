@@ -56,8 +56,9 @@ export function Nav() {
             <div className='relative'>
               <button
                 type='button'
-                className={`group bg-white dark:bg-gray-800 rounded-md ${activeRoute === '/partide/[:slug]' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
-                  } inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-100`}
+                className={`group bg-white dark:bg-gray-800 rounded-md ${
+                  activeRoute === '/partide/[:slug]' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
+                } inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-100`}
                 onClick={() => setShow((s) => (s === 'rapoarte' ? '' : 'rapoarte'))}
                 onMouseEnter={() => setShow('rapoarte')}
                 onMouseLeave={() => {
@@ -68,8 +69,9 @@ export function Nav() {
               >
                 <span className=''>Rapoarte</span>
                 <svg
-                  className={`ml-2 h-5 w-5 ${activeRoute === '/raport/[:year]' ? 'text-gray-600 dark:text-white' : 'text-gray-400 dark:text-gray-600'
-                    } group-hover:text-gray-500 dark:group-hover:text-gray-100`}
+                  className={`ml-2 h-5 w-5 ${
+                    activeRoute === '/raport/[:year]' ? 'text-gray-600 dark:text-white' : 'text-gray-400 dark:text-gray-600'
+                  } group-hover:text-gray-500 dark:group-hover:text-gray-100`}
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 20 20'
                   fill='currentColor'
@@ -116,8 +118,9 @@ export function Nav() {
             </div>
             <Link href='/portrete' passHref legacyBehavior>
               <span
-                className={`text-base cursor-pointer font-medium ${activeRoute === '/harta/[:slug]' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
-                  } hover:text-gray-900 dark:hover:text-gray-100`}
+                className={`text-base cursor-pointer font-medium ${
+                  activeRoute === '/harta/[:slug]' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
+                } hover:text-gray-900 dark:hover:text-gray-100`}
               >
                 Portrete
               </span>
@@ -125,8 +128,9 @@ export function Nav() {
             <div className='relative'>
               <button
                 type='button'
-                className={`group bg-white dark:bg-gray-800 rounded-md ${activeRoute === '/partide/[:slug]' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
-                  } inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-100`}
+                className={`group bg-white dark:bg-gray-800 rounded-md ${
+                  activeRoute === '/partide/[:slug]' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
+                } inline-flex items-center text-base font-medium hover:text-gray-900 dark:hover:text-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-100`}
                 onClick={() => setShow((s) => (s === 'partide' ? '' : 'partide'))}
                 onMouseEnter={() => setShow('partide')}
                 onMouseLeave={() => {
@@ -137,8 +141,9 @@ export function Nav() {
               >
                 <span className=''>Partide</span>
                 <svg
-                  className={`ml-2 h-5 w-5 ${activeRoute === '/partide/[:slug]' ? 'text-gray-600 dark:text-white' : 'text-gray-400 dark:text-gray-600'
-                    } group-hover:text-gray-500 dark:group-hover:text-gray-100`}
+                  className={`ml-2 h-5 w-5 ${
+                    activeRoute === '/partide/[:slug]' ? 'text-gray-600 dark:text-white' : 'text-gray-400 dark:text-gray-600'
+                  } group-hover:text-gray-500 dark:group-hover:text-gray-100`}
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 20 20'
                   fill='currentColor'
@@ -198,16 +203,18 @@ export function Nav() {
           </Link> */}
             <Link href='/join' passHref legacyBehavior>
               <span
-                className={`text-base cursor-pointer font-medium ${activeRoute === '/join' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
-                  } hover:text-gray-900 dark:hover:text-gray-100`}
+                className={`text-base cursor-pointer font-medium ${
+                  activeRoute === '/join' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
+                } hover:text-gray-900 dark:hover:text-gray-100`}
               >
                 Alătură-te
               </span>
             </Link>
             <Link href='/despre' passHref legacyBehavior>
               <span
-                className={`text-base cursor-pointer font-medium ${activeRoute === '/despre' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
-                  } hover:text-gray-900 dark:hover:text-gray-100`}
+                className={`text-base cursor-pointer font-medium ${
+                  activeRoute === '/despre' ? 'text-gray-900 dark:text-white' : 'text-gray-500 dark:text-gray-200'
+                } hover:text-gray-900 dark:hover:text-gray-100`}
               >
                 Despre
               </span>
@@ -231,6 +238,26 @@ export function Nav() {
               <div className='pt-5 pb-6 px-5'>
                 <div className={`${showNav ? '' : 'hidden'} md:flex items-center justify-end md:flex-1 lg:w-0`}>
                   <Search />
+                </div>
+              </div>
+              <div className='pt-5 pb-6 px-5'>
+                <div className='flex items-center justify-between'>
+                  <h1 className=' font-thin text-3xl '>Rapoarte</h1>
+                </div>
+                <div className='mt-6'>
+                  <nav className='grid grid-cols-2 gap-7'>
+                    {reports.map((raport) => (
+                      <a
+                        key={raport.name}
+                        href={`/rapoarte/${raport.year}`}
+                        className='-m-3 p-3 flex rounded-md hover:bg-gray-50 dark:hover:bg-gray-900'
+                      >
+                        <div className='ml-4 text-base font-medium'>
+                          <p className='text-base font-medium text-gray-900 dark:text-gray-100'>{raport.name}</p>
+                        </div>
+                      </a>
+                    ))}
+                  </nav>
                 </div>
               </div>
               <div className='pt-5 pb-6 px-5'>
