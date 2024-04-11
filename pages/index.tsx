@@ -1,14 +1,10 @@
 import Layout from 'components/layout'
 import { NextSeo } from 'next-seo'
 import { Report, ReportDocument } from '../lib/contentTypes'
+import Link from 'next/link'
+import Image from 'next/legacy/image'
 
-export default function IndexPage({
-  preview
-}: {
-  preview: boolean
-  reports: Report[]
-  reportDocuments: ReportDocument[]
-}) {
+export default function IndexPage({ preview }: { preview: boolean; reports: Report[]; reportDocuments: ReportDocument[] }) {
   return (
     <Layout preview={preview}>
       <NextSeo
@@ -23,11 +19,12 @@ export default function IndexPage({
         }}
       />
 
-      <div className='flex justify-center' style={{ height: '60vh', marginTop: '1em' }}>
-        <h5 style={{ fontSize: '5em', marginTop: '1.2em' }}>Integritate pe bune</h5>
+      <div className='flex justify-center mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24'>
+        <Link href={`/rapoarte/2023`} title={'Integritate pe bune Raport 2'}>
+          <Image src={`/images/reports/report-2-launch.png`} height={1200} width={1600} alt={'Integritate pe bune Raport 2'} />
+        </Link>
       </div>
-
-    </Layout >
+    </Layout>
   )
 }
 
