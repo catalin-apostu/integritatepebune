@@ -22,7 +22,7 @@ export function Nav() {
   return (
     <>
       <Head>
-        <link rel='preconnect' href='https://ipumisoovm-dsn.algolia.net' crossOrigin='true' />
+        <link rel='preconnect' href='https://ipumisoovm-dsn.algolia.net' crossOrigin='' />
       </Head>
       <div className='sticky top-0 z-10 bg-white shadow-sm dark:bg-gray-800'>
         <div className='flex shadow-md justify-between items-center px-4 py-6 sm:px-6 md:justify-start md:space-x-10'>
